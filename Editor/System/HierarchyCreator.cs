@@ -12,8 +12,9 @@ namespace com.Klazapp.Editor
         #endregion
 
         private string inputText = "";
-        
-        [MenuItem("Klazapp/Tools/Hierarchy Creator")]
+
+        //Temporarily disabled menu item
+        //[MenuItem("Klazapp/Tools/Hierarchy Creator")]
         private static void ShowWindow()
         {
             //Retrieve inspector window
