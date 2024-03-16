@@ -47,7 +47,7 @@ namespace com.Klazapp.Editor
             
             EditorGUILayout.Space(10f);
             
-            CustomEditorHelper.DrawHorizontalLine();
+            EditorHelper.DrawHorizontalLine();
 
             EditorGUILayout.Space(30f);
 
@@ -61,7 +61,7 @@ namespace com.Klazapp.Editor
 
             DrawCreate();
             
-            if (CustomEditorHelper.OnPointerDownInLastRect())
+            if (EditorHelper.OnPointerDownInLastRect())
             {
                 CreateHierarchy();
             }
@@ -152,9 +152,9 @@ namespace com.Klazapp.Editor
                     wordWrap = true,
                 };
 
-                CustomEditorHelper.DrawBox(250, 15, HierarchyColorComponent.emptyBackgroundColor, "", titleStyle);
-                CustomEditorHelper.DrawBox(250, 15, HierarchyColorComponent.emptyBackgroundColor, "", titleStyle);
-                CustomEditorHelper.DrawBox(250, 15, HierarchyColorComponent.nonEmptyBackgroundColor, inputText.ToUpper(), titleStyle);      
+                EditorHelper.DrawBox(250, 15, HierarchyColorComponent.emptyBackgroundColor, "", titleStyle);
+                EditorHelper.DrawBox(250, 15, HierarchyColorComponent.emptyBackgroundColor, "", titleStyle);
+                EditorHelper.DrawBox(250, 15, HierarchyColorComponent.nonEmptyBackgroundColor, inputText.ToUpper(), titleStyle);      
 
                 EditorGUILayout.EndVertical();
                 GUILayout.FlexibleSpace();
