@@ -6,7 +6,9 @@
         "klazapp.editor.helpers.editor",
         "Unity.Mathematics"
     ],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
