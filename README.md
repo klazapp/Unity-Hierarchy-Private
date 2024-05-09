@@ -1,12 +1,42 @@
-# Unity Custom Inspector Utility
+# Hierarchy Color for Unity
 
-This custom Inspector  tool changes the way developers interact with scripts within the Unity Editor. Key features include:
+## Introduction
 
-1. **Edit Script Button:** Directly access and edit scripts from the inspector, streamlining the development process.
-2. **Reveal Script Location:** Quickly locate scripts within your project hierarchy, improving navigation and file management.
-3. **Script Header Description:** Annotate scripts with descriptions, clarifying their purpose and functionality at a glance.
-4. **ToDo Header Description:** Keep track of pending tasks and development notes right within the inspector, ensuring nothing gets overlooked.
-5. **Read-Only Attribute:** Mark certain fields as read-only, preventing unintended modifications while allowing visibility in the inspector.
-6. **Custom Decorator Drawer:** Enhance property fields with descriptive tooltips, providing context and usage information to aid in development.
+The Hierarchy Color package, part of the `com.Klazapp.Editor` namespace, enhances the Unity Editor by coloring hierarchy items based on specific conditions. This tool is designed to improve scene organization and editor visibility by applying different background colors to GameObjects in the hierarchy window, helping developers quickly identify important objects or categories like TODO items or editor-only objects.
 
-Designed for developers seeking a more organized, informative, and efficient workflow in Unity, this tool optimizes the inspector interface to better align with the needs of sophisticated software projects."
+## Features
+
+- **Visual Organization:** Automatically colors hierarchy items based on tags, names, and properties to visually distinguish between different types of GameObjects.
+- **Customizable Color Coding:** Includes predefined colors for non-empty GameObjects, empty GameObjects, TODO items, and editor-only items, with easy customization options.
+- **Dynamic UI Updates:** Integrates seamlessly into the Unity Editor, updating the hierarchy display in real-time as you work on your project.
+
+## Dependencies
+
+- **Unity Editor Scripting:** This package is specifically for use within the Unity Editor and leverages Unity's Editor scripting capabilities.
+
+## Compatibility
+
+The Hierarchy Color package is designed for use within the Unity Editor and does not depend on Unity's runtime environments, rendering pipelines, or specific Unity versions.
+
+| Compatibility | URP | BRP | HDRP |
+|---------------|-----|-----|------|
+| Not Applicable| N/A | N/A | N/A  |
+
+## Installation
+
+1. Download the Hierarchy Color package from the [GitHub repository](https://github.com/klazapp/Unity-Hierarchy-Color-Public.git) or via the Unity Package Manager.
+2. Add the scripts to your Unity project, ideally within an Editor folder to ensure they are only compiled for editor use.
+
+## Usage
+
+The Hierarchy Color functionality is automatic once the scripts are included in your project. It will start applying colors based on the conditions defined in the scripts, with no additional setup required.
+
+## To-Do List (Future Features)
+
+- [ ] Provide a GUI for customizing color settings directly from the Unity Editor.
+- [ ] Expand the conditions for color coding to include user-defined tags and properties.
+- [ ] Enhance performance for large projects with many hierarchy items.
+
+## License
+
+This utility is released under the MIT License, allowing for free use, modification, and distribution within your projects.
