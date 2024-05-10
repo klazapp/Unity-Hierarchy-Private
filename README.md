@@ -15,12 +15,9 @@ The Hierarchy Color package, part of the `com.Klazapp.Editor` namespace, enhance
 - **Unity Editor Scripting:** This package is specifically for use within the Unity Editor and leverages Unity's Editor scripting capabilities.
 
 ## Compatibility
-
-The Hierarchy Color package is designed for use within the Unity Editor and does not depend on Unity's runtime environments, rendering pipelines, or specific Unity versions.
-
-| Compatibility | URP | BRP | HDRP |
-|---------------|-----|-----|------|
-| Not Applicable| N/A | N/A | N/A  |
+| Compatibility        | URP | BRP | HDRP |
+|----------------------|-----|-----|------|
+| Compatible           | ✔️  | ✔️  | ✔️   |
 
 ## Installation
 
